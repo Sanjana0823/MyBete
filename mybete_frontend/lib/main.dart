@@ -234,6 +234,7 @@
 // }
 
 import 'package:flutter/material.dart';
+import 'package:mybete_frontend/profile.dart';
 import 'logIn.dart';
 import 'signUp.dart';
 
@@ -251,6 +252,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => LogInPage(),
         '/signup': (context) => SignUpPage(),
         '/main': (context) => MainPage(),
+        '/profile': (context) => Profile(),
       },
     );
   }
@@ -263,9 +265,22 @@ class MainPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Main Page'),
       ),
-      body: Center(
-        child: Text('Welcome to the Main Page!'),
-      ),
+      body: Padding(
+        padding: EdgeInsets.all(16.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(height: 20),
+            ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushReplacementNamed(context, '/profile');
+                    },
+                    child: Text('Profile'),
+            ),
+        
+          ]
+        )
+      )
     );
   }
 }
