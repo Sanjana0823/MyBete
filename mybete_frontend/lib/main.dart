@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: MaterialColor(0xFF5EB7CF, <int, Color>{
+        primarySwatch: const MaterialColor(0xFF5EB7CF, <int, Color>{
           50 : Color(0x1A5EB7CF),
           100 : Color(0x335EB7CF),
           200 : Color(0x4D5EB7CF),
