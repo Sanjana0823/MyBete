@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mybete_frontend/src/utils/theme/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,22 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: const MaterialColor(0xFF5EB7CF, <int, Color>{
-          50 : Color(0x1A5EB7CF),
-          100 : Color(0x335EB7CF),
-          200 : Color(0x4D5EB7CF),
-          300 : Color(0x665EB7CF),
-          400 : Color(0x805EB7CF),
-          500 : Color(0xFF5EB7CF),
-          600 : Color(0x995EB7CF),
-          700 : Color(0xB35EB7CF),
-          800 : Color(0xCC5EB7CF),
-          900 : Color(0xE65EB7CF),
-        }),
-        brightness: Brightness.light,
-      ),
-      darkTheme: ThemeData(brightness: Brightness.dark),
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.system,
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
