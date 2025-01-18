@@ -1,23 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+//import 'package:google_fonts/google_fonts.dart';
+import 'package:mybete_frontend/src/utils/theme/widget_themes/text_theme.dart';
 
 class AppTheme {
-    static ThemeData lightTheme = ThemeData( brightness: Brightness.light,
-    textTheme: TextTheme(
-        headlineMedium: GoogleFonts.montserrat(
-            color: Colors.black87,
-            fontSize: 32,
-        ),
-        //headlineLarge: TextStyle()
-    )
-    );
-    static ThemeData darkTheme = ThemeData( brightness: Brightness.dark,
-    textTheme: TextTheme(
-        headlineMedium: GoogleFonts.montserrat(
-            color: Colors.white70,
-            fontSize: 32,
-        ),
-    )
-    );
+  AppTheme._();
 
+  static ThemeData lightTheme = ThemeData(
+      brightness: Brightness.light, 
+      textTheme: AppTextTheme.lightTextTheme
+      );
+  static ThemeData darkTheme = ThemeData(
+      brightness: Brightness.dark, 
+      textTheme: AppTextTheme.darkTextTheme
+      );
 }
