@@ -14,3 +14,4 @@ class AppTheme {
       textTheme: AppTextTheme.darkTextTheme
       );
 }
+ 
