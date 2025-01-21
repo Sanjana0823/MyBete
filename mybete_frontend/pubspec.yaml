@@ -50,7 +50,15 @@ dev_dependencies:
 
 flutter_native_splash:
   color: "#f7f6f1"
-  dark_color: "#272727"
+  color_dark: "#272727"
+  image: assets/images/logo.png
+  image_dark: assets/images/logo.png
+
+  android_12:
+    image: assets/images/logo.png
+    icon_background_color: "#f7f6f1"
+    image_dark: assets/images/logo.png
+    icon_background_color_dark: "#272727"
 
 
 # For information on the generic Dart part of this file, see the
