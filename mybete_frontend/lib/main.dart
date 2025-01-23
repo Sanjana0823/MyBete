@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mybete_frontend/src/features/authentication/screens/splash_screen/splash_screen.dart';
 import 'package:mybete_frontend/src/utils/theme/theme.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.system,
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: SplashScreen(),
     );
   }
 }
