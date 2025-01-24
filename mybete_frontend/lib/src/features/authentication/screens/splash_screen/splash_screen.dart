@@ -14,7 +14,8 @@ class SplashScreen extends StatelessWidget {
             const Center(
                  child: Image(image: AssetImage(splashIcon), width: 100, height: 100,)
                 ),
-                Positioned(child: Column(children: [Text(appName, style: Theme.of(context).textTheme.headlineMedium)],))
+                Center(child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                children: [SizedBox(height: 120),Text(appName, style: Theme.of(context).textTheme.headlineSmall)],))
           ],
         ),
       ),
