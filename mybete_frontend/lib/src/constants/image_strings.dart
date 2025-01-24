@@ -1,4 +1,5 @@
 // App image strings
 
-const String splashIcon = "assets/images/logo.png";
-const String splashAnimation = "assets/animation/splash_animation.json";
+const String splashIconWithText = "assets/logo/logo.png";
+const String splashAnimation = "assets/animation/heartAnimation.json";
+const String splashIcon = "assets/logo/logoIcon.png";
