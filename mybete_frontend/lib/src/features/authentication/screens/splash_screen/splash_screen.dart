@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mybete_frontend/src/constants/image_strings.dart';
 import 'package:mybete_frontend/src/constants/text.string.dart';
+import 'package:lottie/lottie.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -12,10 +13,20 @@ class SplashScreen extends StatelessWidget {
         child: Stack(
           children: [
             const Center(
-                 child: Image(image: AssetImage(splashIcon), width: 100, height: 100,)
-                ),
-                Center(child: Column(mainAxisAlignment: MainAxisAlignment.center,
-                children: [SizedBox(height: 120),Text(appName, style: Theme.of(context).textTheme.headlineSmall)],))
+                child: Image(
+              image: AssetImage(splashIcon),
+              width: 100,
+              height: 100,
+            )),
+            Center(
+                child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(height: 120),
+                Text(appName, style: Theme.of(context).textTheme.headlineSmall)
+              ],
+            )),
+            Stack(children: [ Positioned(child: Lottie.asset('assets/animation/heartAnimation.json')),],),
           ],
         ),
       ),
