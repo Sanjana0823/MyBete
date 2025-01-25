@@ -26,7 +26,23 @@ class SplashScreen extends StatelessWidget {
                 Text(appName, style: Theme.of(context).textTheme.headlineSmall)
               ],
             )),
-            Stack(children: [ Positioned(child: Lottie.asset('assets/animation/heartAnimation.json')),],),
+            Stack(
+              children: [
+                Positioned(
+                  bottom: 0,
+                  left: 0,
+                  right: 0,
+                  child: Center(
+                    child: SizedBox(
+                      width: 50,
+                      height: 50,
+                      child:
+                          Lottie.asset('assets/animation/heartAnimation.json'),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
