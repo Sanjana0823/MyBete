@@ -3,8 +3,15 @@ import 'package:mybete_frontend/src/constants/image_strings.dart';
 import 'package:mybete_frontend/src/constants/text.string.dart';
 import 'package:lottie/lottie.dart';
 
-class SplashScreen extends StatelessWidget {
-  const SplashScreen({super.key});
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({Key? key}) : super(key: key);
+
+  @override
+  State<SplashScreen> createState() => SplashScreenState();
+
+}
+
+class SplashScreenState extends State<SplashScreen>{
 
   @override
   Widget build(BuildContext context) {
